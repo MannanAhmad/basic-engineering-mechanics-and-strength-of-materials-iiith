@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML FORM</title>
+		<style>
+			form{
+				width: 500px;
+				background: silver;
+				padding: 30px;
+				margin: 0 auto;
+				border: 5px solid brown;
+			}
+			input[type="text"],input[type="password"],select{
+				width:300px;
+				border: none;
+				outline:none;
+			}
+			textarea{
+				resize:none;
+				border: 1px solid black;
+			}
+			input[type="submit"]{
+				background:brown;
+				color:white;
+				border: 1px solid black;
+				width:305px;
+				height:25px;
+			}
+			input[type:"text"]:focus,input[type="password"]:focus,select:focus{
+				background:orange;
+			}
+			input[type:"text"]:hover,input[type="password"]:hover{
+				background:green;
+			}
+		</style>
+	</head>
+	<body>
+	<form>
+	<h1>Fill the Form</h1><hr/><br/>
+		<table>
+			<tr>
+				<td><label for="user">username</label></td>
+				<td><input type="text"id="user" name="user"/></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password</label></td>
+				<td><input type="password" id="pass" name="password"/></td>
+			</tr>
+			<tr>
+				<td><label>Gender</label></td>
+				<td>Male : <input type="radio" name="gender" value="male"/> <br/> Female : <input type="radio" name="gender" value="female"/><br/><br/></td>
+			</tr>
+			<tr>
+				<td><label>Skills</label></td>
+				<td>HTML : <input type="checkbox"  name="skills" value="html"/> <br/> CSS : <input type="checkbox"  name="skills" value="css"/> <br/> 
+				Javascript : <input type="checkbox"  name="skills" value="javascript"/> <br/> PHP : <input type="checkbox"  name="skills" value="php"/><br/><br/></td>
+			</tr>
+			<tr>
+				<td><label for="con">Country</label></td>
+				<td>
+					<select id="con" name="country">
+							<option value="">select your country</option>
+							<option value="ind">India</option>
+							<option value="pak">Pakistan</option>
+							<option value="bang">Bangladesh</option>
+							<option value="afg">Afganistan</option>
+							<option value="us">America</option>
+							<option value="uk">United Kingdom</option>
+							<option value="roos">Russia</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="comment">Comments</label></td>
+				<td><textarea  rows="10" cols="40" id="comment"  name="comment" value="comment"></textarea></td>
+			</tr>
+			<tr>
+			<td></td>
+				<td>
+					<input type="submit" value="click to submit" name="submit-form"/>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	</body>
+</html>
